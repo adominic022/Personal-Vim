@@ -1,14 +1,17 @@
 # Personal-Vim
-My personal settings for vim
+## My personal settings for vim
 
-setup Vundle:
+### setup Vundle:
 https://github.com/VundleVim/Vundle.vim
 
+### add gruvbox
 In the plugin section of .vimrc, add:
 Plugin 'morhetz/gruvbox'
 
 then run:
+
 :source %
+
 :PluginInstall
 
 
@@ -18,7 +21,7 @@ set background=dark
 finally alias vim to prefered acronym in .bashrc
 
 
-Adding Fonts:
+### Adding Fonts:
 
 Download the Roboto-Mono Font from:
 https://fonts.google.com/specimen/Roboto+Mono?selection.family=Roboto+Mono&sidebar.open=true&preview.text_type=custom
