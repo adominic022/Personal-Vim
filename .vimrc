@@ -29,21 +29,20 @@ filetype plugin indent on    " required
 
 "256 color support for Tmux"
 set background=dark
-"set t_Co=256
-"set termguicolors
+
 
 "PEP8 indentation for python"
-au BufNewFile,BufRead *.py
-set tabstop =4
-set shiftwidth =4
-set softtabstop =4
+au BufNewFile,BufRead * silent! *.py
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set textwidth=79
 set expandtab
 set autoindent
 set fileformat=unix	
 
 "Flag Unnecessary Whitespace"
-au BufRead,BufNewFile *.c,*.h,*.cpp match badWhitespace /\s\+$/
+au BufRead,BufNewFile * silent! *.c,*.h,*.cpp match badWhitespace /\s\+$/
 set encoding=utf-8
 set autoindent
 set showmode
@@ -56,7 +55,7 @@ set ttyfast
 set ruler
 
 set backspace=indent,eol,start
-set laststatus =2
+set laststatus=2
 set number
 
 set undofile "creates <filename>.un~ undo information"
@@ -80,14 +79,6 @@ set colorcolumn=85
 set list 
 set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
 
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop> 
-inoremap <right> <nop>
 nnoremap j gj
 nnoremap k gk
 
